@@ -1,0 +1,7 @@
+{
+	"plugins": {
+		"autoprefixer": true,
+		"postcss-combine-media-query": true,
+		"postcss-font-magician": true
+	}
+}
