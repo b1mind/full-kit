@@ -1,2 +1,12 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<header>
+	<h1>This is a starter template for Kit</h1>
+	<p>
+		Visit <a href="https://github.com/b1mind/full-kit#readme">GitHub</a> to read the documentation
+	</p>
+</header>
+
+<style lang="scss">
+	h1 {
+		font-family: 'Fira Sans';
+	}
+</style>
