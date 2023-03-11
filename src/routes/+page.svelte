@@ -1,9 +1,7 @@
-<header>
-	<h1>This is a starter template for Kit</h1>
-	<p>
-		Visit <a href="https://github.com/b1mind/full-kit#readme">GitHub</a> to read the documentation
-	</p>
-</header>
+<h1>This is a starter template for SvelteKit</h1>
+<p>
+	Visit <a href="https://github.com/b1mind/full-kit#readme">GitHub</a> to read the documentation
+</p>
 
 <style lang="scss">
 </style>

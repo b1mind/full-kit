@@ -2,7 +2,8 @@
 	/** @type {import('./$types').LayoutData} */
 	//export let data
 	import '$lib/scss/global.scss'
-	import Header from './Header.svelte'
+	import Nav from './Nav.svelte'
+	import Footer from './Footer.svelte'
 </script>
 
 <svelte:head>
@@ -11,27 +12,42 @@
 </svelte:head>
 
 <div class="wrap-main">
-	<Header />
+	<header>
+		<b>Logo</b>
+		<Nav />
+	</header>
 
 	<main>
-		<slot />
+		<div>
+			<slot />
+		</div>
 	</main>
 
-	<footer>This is a Footer</footer>
+	<footer>
+		<Footer />
+	</footer>
 </div>
 
 <style lang="scss">
-	.wrap-main {
+	//wish we had subgrid............ somedayTM
+	main {
+		grid-column: 1 / 4;
 		display: grid;
-		min-height: 100%;
-		//todo breakout margins and tie into $media vars for main content max
 		grid-template-columns: minmax(1rem, 1fr) minmax(0, 60rem) minmax(1rem, 1fr);
-		grid-template-rows: auto 1fr auto;
+		grid-template-areas: '. content .';
 
-		//todo util for this and full/mid/sml look at example
-		//only works if element is direct child not a component.. use ignore or?
 		& > * {
-			grid-column: 2 / 3;
+			grid-column: content;
 		}
+	}
+
+	header {
+		padding-block: var(--spacer-h-sml, 1.25rem);
+		display: grid;
+		grid-template-columns: 1fr auto;
+	}
+
+	footer {
+		padding-block: var(--spacer-h-sml, 1rem);
 	}
 </style>

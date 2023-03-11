@@ -33,3 +33,18 @@ a {
 }
 
 // utils
+
+.wrap-main {
+	position: relative;
+	display: grid;
+	min-height: 100%;
+	//todo breakout margins and tie into $media vars for main content max
+	grid-template-columns: minmax(1rem, 1fr) minmax(0, 60rem) minmax(1rem, 1fr);
+	grid-template-rows: auto 1fr auto;
+	grid-template-areas: '. content .';
+
+	//todo util for this and full/mid/sml look at example
+	& > * {
+		grid-column: content;
+	}
+}
