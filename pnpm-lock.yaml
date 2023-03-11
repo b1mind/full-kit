@@ -29,7 +29,7 @@ devDependencies:
   gsap: /@gsap/shockingly/3.11.4
   postcss: 8.4.21
   postcss-combine-media-query: 1.0.1
-  postcss-font-magician: 3.0.0_postcss@8.4.21
+  postcss-font-magician: github.com/chasewalden/postcss-font-magician/5d0a5bd3a1e587a8a47187c04f2a459e66855a7d_postcss@8.4.21
   prettier: 2.8.4
   prettier-plugin-svelte: 2.9.0_gan2xfhhcbz3kbkivttwsjndea
   sass: 1.59.2
@@ -332,7 +332,7 @@ packages:
       '@sveltejs/kit': ^1.0.0
     dependencies:
       '@sveltejs/kit': 1.11.0_svelte@3.56.0+vite@4.1.4
-      import-meta-resolve: 2.2.1
+      import-meta-resolve: 2.2.2
     dev: true
 
   /@sveltejs/kit/1.11.0_svelte@3.56.0+vite@4.1.4:
@@ -936,8 +936,8 @@ packages:
       resolve-from: 4.0.0
     dev: true
 
-  /import-meta-resolve/2.2.1:
-    resolution: {integrity: sha512-C6lLL7EJPY44kBvA80gq4uMsVFw5x3oSKfuMl1cuZ2RkI5+UJqQXgn+6hlUew0y4ig7Ypt4CObAAIzU53Nfpuw==}
+  /import-meta-resolve/2.2.2:
+    resolution: {integrity: sha512-f8KcQ1D80V7RnqVm+/lirO9zkOxjGxhaTC1IPrBGd3MEfNgmNG67tSUO9gTi2F3Blr2Az6g1vocaxzkVnWl9MA==}
     dev: true
 
   /imurmurhash/0.1.4:
@@ -1210,18 +1210,6 @@ packages:
     resolution: {integrity: sha512-DFSXuYy3ltDkC2esIF0ORoS9DCjlyfWhtoQkG9brZMuJY1ABOER95sm3dvccR6IEgSrYX4RgqiHD4Lq3JGrxyw==}
     dependencies:
       postcss: 7.0.39
-    dev: true
-
-  /postcss-font-magician/3.0.0_postcss@8.4.21:
-    resolution: {integrity: sha512-PqGk9TeIoWzytZeLW6AtgzuL1sJb0bO0xPr4daI6MEhidqyCMECJmwXIlAS6ypf18y6tR04cDFbLqlQruXQiIA==}
-    engines: {node: ^10 || ^12 || >=14}
-    peerDependencies:
-      postcss: ^8.0.0
-    dependencies:
-      bootstrap-fonts-complete: 1.0.0
-      directory-fonts-complete: 1.2.0
-      google-fonts-complete: 2.1.1
-      postcss: 8.4.21
     dev: true
 
   /postcss-value-parser/4.2.0:
@@ -1556,4 +1544,19 @@ packages:
   /yocto-queue/0.1.0:
     resolution: {integrity: sha512-rVksvsnNCdJ/ohGc6xgPwyN8eheCxsiLM8mxuE/t/mOVqJewPuO1miLpTHQiRgTKCLexL4MeAFVagts7HmNZ2Q==}
     engines: {node: '>=10'}
+    dev: true
+
+  github.com/chasewalden/postcss-font-magician/5d0a5bd3a1e587a8a47187c04f2a459e66855a7d_postcss@8.4.21:
+    resolution: {tarball: https://codeload.github.com/chasewalden/postcss-font-magician/tar.gz/5d0a5bd3a1e587a8a47187c04f2a459e66855a7d}
+    id: github.com/chasewalden/postcss-font-magician/5d0a5bd3a1e587a8a47187c04f2a459e66855a7d
+    name: postcss-font-magician
+    version: 3.0.0
+    engines: {node: ^10 || ^12 || >=14}
+    peerDependencies:
+      postcss: ^8.0.0
+    dependencies:
+      bootstrap-fonts-complete: 1.0.0
+      directory-fonts-complete: 1.2.0
+      google-fonts-complete: 2.1.1
+      postcss: 8.4.21
     dev: true
