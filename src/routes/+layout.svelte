@@ -35,6 +35,7 @@
 		display: grid;
 		grid-template-columns: minmax(1rem, 1fr) minmax(0, 60rem) minmax(1rem, 1fr);
 		grid-template-areas: '. content .';
+		background-color: var(--clr-background-dark);
 
 		& > * {
 			grid-column: content;
@@ -42,12 +43,17 @@
 	}
 
 	header {
-		padding-block: var(--spacer-h-sml, 1.25rem);
+		padding-block: var(--spacer-sml, 1.25rem);
 		display: grid;
 		grid-template-columns: 1fr auto;
+		align-items: center;
+
+		b {
+			font-size: var(--font-med, 1.5rem);
+		}
 	}
 
 	footer {
-		padding-block: var(--spacer-h-sml, 1rem);
+		padding-block: var(--spacer-sml, 1rem);
 	}
 </style>

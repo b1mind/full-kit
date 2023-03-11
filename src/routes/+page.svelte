@@ -4,4 +4,7 @@
 </p>
 
 <style lang="scss">
+	p {
+		grid-column: 1 / 4;
+	}
 </style>
