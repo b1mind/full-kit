@@ -1,11 +1,24 @@
 :root {
 	//tokens
-	--purple-1: blueviolet;
+	//todo hsl token colors so you can split opacity easier
+	--purple-0: blueviolet;
+	--purple-1: #896ffb;
+	--black-0: #121212;
+	--black-1: #1b1b1b;
+	--white-0: #fafafa;
 
 	//contextual tokens
-	--clr-background: #1b1b1b;
+	--clr-background: var(--black-1);
+	--clr-background-dark: var(--black-0);
 	--clr-primary: var(--purple-1);
-	--clr-font: #fafafa;
+	--clr-primary-dark: var(--purple-0);
+	--clr-font: var(--white-0);
+	--font-med: 1.5rem;
+	--font-lrg: 2rem;
+}
+
+* {
+	box-sizing: border-box;
 }
 
 //small resets and defaults
@@ -30,6 +43,21 @@ a {
 	&:hover {
 		text-decoration: underline;
 	}
+}
+
+h1,
+h2,
+h3 {
+	font-family: serif;
+	line-height: 1.2;
+}
+
+p {
+	line-height: 1.5;
+}
+
+input {
+	font-family: inherit;
 }
 
 // utils
