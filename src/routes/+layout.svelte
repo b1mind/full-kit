@@ -2,10 +2,16 @@
 	/** @type {import('./$types').LayoutData} */
 	//export let data
 	import '$lib/scss/global.scss'
+	import Header from './Header.svelte'
 </script>
 
+<svelte:head>
+	<title>FullKit Template</title>
+	<meta name="description" content="" />
+</svelte:head>
+
 <div class="wrap-main">
-	<header>This is a header</header>
+	<Header />
 
 	<main>
 		<slot />
@@ -18,10 +24,12 @@
 	.wrap-main {
 		display: grid;
 		min-height: 100%;
-		grid-template-columns: minmax(1rem, 1fr) minmax(0, 50rem) minmax(1rem, 1fr);
+		//todo breakout margins and tie into $media vars for main content max
+		grid-template-columns: minmax(1rem, 1fr) minmax(0, 60rem) minmax(1rem, 1fr);
 		grid-template-rows: auto 1fr auto;
 
-		//need a util for this and full/mid look at example
+		//todo util for this and full/mid/sml look at example
+		//only works if element is direct child not a component.. use ignore or?
 		& > * {
 			grid-column: 2 / 3;
 		}

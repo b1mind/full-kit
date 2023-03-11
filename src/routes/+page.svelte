@@ -6,7 +6,4 @@
 </header>
 
 <style lang="scss">
-	h1 {
-		font-family: 'Fira Sans';
-	}
 </style>

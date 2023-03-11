@@ -8,17 +8,17 @@
 	--clr-font: #fafafa;
 }
 
-//small resets
+//small resets and defaults
 html {
 	height: 100%;
 }
 
 body {
 	margin: 0;
-	//display: grid;
-	//min-height: 100%;
-	height: 100%;
-	font-family: 'Helvetica', sans-serif;
+	display: grid;
+	min-height: 100%;
+	//height: 100%;
+	font-family: 'Open Sans', sans-serif;
 	color: var(--clr-font);
 	background-color: var(--clr-background);
 }
@@ -31,3 +31,5 @@ a {
 		text-decoration: underline;
 	}
 }
+
+// utils
