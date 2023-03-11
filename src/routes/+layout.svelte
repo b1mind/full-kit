@@ -29,12 +29,12 @@
 </div>
 
 <style lang="scss">
-	//wish we had subgrid............ somedayTM
+	//wish we had subgrid... somedayTM for now inherit
 	main {
 		grid-column: 1 / 4;
 		display: grid;
-		grid-template-columns: minmax(1rem, 1fr) minmax(0, 60rem) minmax(1rem, 1fr);
-		grid-template-areas: '. content .';
+		grid-template-columns: inherit;
+		grid-template-areas: inherit;
 		background-color: var(--clr-background-dark);
 
 		& > * {
