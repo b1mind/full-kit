@@ -4,7 +4,8 @@ module.exports = () => {
 			require('autoprefixer')(),
 			require('postcss-combine-media-query'),
 			require('postcss-font-magician')({
-				formats: 'wolf2 woff'
+				formats: 'woff2',
+				display: 'swap'
 			})
 		]
 	}
