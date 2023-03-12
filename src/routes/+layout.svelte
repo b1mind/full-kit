@@ -1,6 +1,4 @@
 <script>
-	/** @type {import('./$types').LayoutData} */
-	//export let data
 	import '$lib/scss/global.scss'
 	import Nav from './Nav.svelte'
 	import Footer from './Footer.svelte'
