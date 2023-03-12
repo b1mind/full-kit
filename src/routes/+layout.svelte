@@ -18,9 +18,7 @@
 	</header>
 
 	<main>
-		<div>
-			<slot />
-		</div>
+		<slot />
 	</main>
 
 	<footer>
@@ -36,10 +34,6 @@
 		grid-template-columns: inherit;
 		grid-template-areas: inherit;
 		background-color: var(--clr-background-dark);
-
-		& > * {
-			grid-column: content;
-		}
 	}
 
 	header {
