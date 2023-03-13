@@ -8,7 +8,7 @@ Enhanced by b1mind
 
 ```bash
 # create a new project in the current directory
-npx 'b1mind/full-kit' my-app
+npx degit 'b1mind/full-kit' my-app
 
 ```
 
